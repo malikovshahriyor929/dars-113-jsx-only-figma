@@ -58,3 +58,4 @@ any bu xohlagan qiymat bersa boladi
 union huddi antd ni color berishiga oxshidi 
 type COLOR = "red" | "green" | "blue" | "yellow";
 
+Redonly  obj oldidan qoyiladi va buni ozgartirib bolmaydi faqat oqiladi
