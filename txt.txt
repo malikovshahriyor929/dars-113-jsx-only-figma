@@ -1,0 +1,60 @@
+Touples  arrlarga type berishda ishlatiladi
+masalan let person: [string, number, boolean] = ["olim", 32, false]; 
+
+Enumda ham index ham value oladi
+enum color {
+  red,  = 0
+  blue, =1
+  green = 10, =10
+  yellow,  =11
+}
+
+Type Scrit 
+type berish
+
+abstrack  ozidan meros beradi lekin arr yaratmaydi 
+ masalan  abstract class Car {
+  color: string;
+  speed: number;
+  model: string;
+  constructor(color: string, speed: number, model: string) {
+    this.color = color;
+    this.model = model;
+    this.speed = speed;
+  }
+}
+class BMW extends Car {
+  engine: string;
+  constructor(engine: string, color: string, speed: number, model: string) {
+    super(color, speed, model);
+    this.engine = engine;
+  }
+}
+
+interface object tuzilishiga va type berishda yordam beradi
+interface personType {
+  id: string | number;
+  name: string;
+}
+
+namespace bu funtion yoki smth larni  fazoga (sinfga) ajratish 
+namespace Mathematics {
+  export const pi = 3.14;
+  export function add(a: number, b: number): number {
+    return a + b;
+  }
+  export function substack(a: number, b: number): number {
+    return a - b;
+  }
+}
+
+generics bu type berishni optimalashtiradi
+type A<T> = T; 
+
+unknown bu type berishda hafsizlikda ancha kuchli than any 
+
+any bu xohlagan qiymat bersa boladi
+
+union huddi antd ni color berishiga oxshidi 
+type COLOR = "red" | "green" | "blue" | "yellow";
+
